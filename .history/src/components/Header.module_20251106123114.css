@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

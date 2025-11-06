@@ -1,0 +1,18 @@
+:root {
+  --color-bg: #dff048;
+  --color-bg-dark: #e0e0e0;
+  --color-text: #333333;
+  --color-accent: #ff5722;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  /* background: linear-gradient(
+    90deg,
+    rgba(223, 240, 72, 1) 0%,
+    rgba(46, 166, 102, 1) 40%
+  ); */
+}

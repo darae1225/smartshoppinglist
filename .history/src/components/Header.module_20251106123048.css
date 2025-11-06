@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

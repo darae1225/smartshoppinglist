@@ -1,0 +1,23 @@
+.dealSection {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  gap: 20px;
+  padding: 1rem 0;
+}
+
+.dealButton {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 90%;
+  padding: 1rem 0;
+}
+
+.dealButton:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}

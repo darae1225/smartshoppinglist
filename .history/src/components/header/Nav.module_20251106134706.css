@@ -1,0 +1,20 @@
+.container {
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  margin-right: 0.3rem;
+}
+
+.button {
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 0.1rem;
+  margin: 0 0.2rem;
+  color: var(--color-button-text);
+}

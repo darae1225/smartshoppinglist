@@ -1,0 +1,28 @@
+.container {
+  background-color: var(--color-accent);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+input,
+select {
+  padding: 0.3rem 0.2rem;
+  border: none;
+}
+
+button {
+  background: transparent;
+  background-color: yellow;
+  border-radius: 12px;
+  border: none;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 0.2rem;
+}

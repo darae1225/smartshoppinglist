@@ -1,0 +1,18 @@
+:root {
+  --color-bg: #2ea666;
+  --color-button-text: white;
+  --color-text: black;
+  --color-accent: #64d89b;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 240, 72, 1) 0%,
+    rgba(46, 166, 102, 1) 40%
+  );
+}

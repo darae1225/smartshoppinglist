@@ -1,0 +1,13 @@
+.container {
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  color: white;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--color-text);
+}

@@ -1,0 +1,18 @@
+.container {
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  margin-right: 0.3rem;
+}
+
+.button {
+  background-color: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--color-button-text);
+}

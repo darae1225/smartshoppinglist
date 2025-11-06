@@ -1,0 +1,13 @@
+header {
+  background-color: yellow;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+
+.container {
+  justify-content: space-between;
+}
