@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  padding: 0.2rem;
+
+  background-color: transparent;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.button:active {
+  background-color: var(--color-everydayrewards);
+  color: var(--color-text);
+  border: 1px solid green;
+}

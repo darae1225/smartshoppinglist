@@ -1,0 +1,59 @@
+.empty {
+  text-align: center;
+}
+
+.saving {
+  font-size: 1.5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: var(--color-text);
+  border-radius: 5px;
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemTop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox {
+  transform: scale(1.5);
+  transform-origin: center;
+  cursor: pointer;
+}
+
+.text {
+  color: var(--color-text-black);
+}
+
+.text::first-letter {
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.category {
+  font-size: 0.85rem;
+  margin-left: 1.5rem;
+  color: var(--color-text-category);
+}

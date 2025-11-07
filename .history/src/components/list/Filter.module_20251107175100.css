@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  margin: 1 0.5rem 0 0.5rem;
+  padding: 0.2rem;
+
+  background-color: var(--color-membership-bg);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}

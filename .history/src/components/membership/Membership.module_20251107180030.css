@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+  padding: 1rem 0.5rem;
+
+  background-color: var(--color-membership-bg);
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+button:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+button:active {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+  border: solid 1px red;
+}
+
+.flybuys,
+.everydayrewards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flybuys {
+  background-color: var(--color-flybuys);
+  color: var(--color-text);
+}
+
+.everydayrewards {
+  background: var(--color-everydayrewards);
+  color: var(--color-text);
+}
