@@ -15,6 +15,6 @@
 }
 
 .button:active {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent #31c677);
   color: var(--color-text);
 }
