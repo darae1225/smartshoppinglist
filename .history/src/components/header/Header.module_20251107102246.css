@@ -1,0 +1,11 @@
+header {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-header);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}

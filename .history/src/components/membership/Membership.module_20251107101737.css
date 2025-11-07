@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 90%;
+  padding: 1rem 0;
+}
+
+button:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.flybuys {
+  background-color: coral;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+}
+
+.everydayrewards {
+  background: green;
+  color: var(--color-text);
+}

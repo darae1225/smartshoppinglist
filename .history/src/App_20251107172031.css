@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #2ea666;
+  --color-text: white;
+  --color-text-black: charcoal;
+  --color-accent: #31c677;
+  --color-flybuys: coral;
+  --color-everydayrewards: green;
+  --color-header-bg: #098209;
+  --color-membership-bg: rgb(238, 238, 238);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 240, 72, 1) 0%,
+    rgba(46, 166, 102, 1) 40%
+  );
+}
+
+button {
+  border-radius: 15px;
+}

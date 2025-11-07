@@ -1,0 +1,6 @@
+.container {
+  margin: 0;
+  background-color: red;
+  display: flex;
+  gap: 1rem;
+}

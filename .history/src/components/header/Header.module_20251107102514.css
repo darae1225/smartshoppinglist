@@ -1,0 +1,16 @@
+header {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  background-color: var(--color-header-bg);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 240, 72, 1) 0%,
+    rgb(9, 130, 9) 40%
+  );
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
