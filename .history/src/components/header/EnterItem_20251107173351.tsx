@@ -57,9 +57,9 @@ export default function EnterItem({ onAdd }) {
           value={groceryCategory}
           onChange={handleChangeGroceryCategory}
         >
-          {category.map((category) => {
-            return <option value={category}>{category}</option>;
-          })}
+          <option value="Any">Any</option>
+          <option value="Bakery">Bakery</option>
+          <option value="Dairy">Dairy</option>
         </select>
       </section>
       <button onClick={handleClick}>

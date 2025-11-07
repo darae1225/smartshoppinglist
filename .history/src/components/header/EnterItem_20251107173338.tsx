@@ -6,6 +6,16 @@ import { v4 as uuidv4 } from "uuid";
 export default function EnterItem({ onAdd }) {
   const [inputValue, setInputValue] = useState("");
   const [groceryCategory, setGroceryCategory] = useState("");
+  const [category, setCategory] = useState([
+    "Any",
+    "Dairy",
+    "Bakery",
+    "Meat",
+    "Seafood",
+    "Asian",
+    "Drinks",
+  ]);
+
   const category = [
     "Any",
     "Dairy",
@@ -57,9 +67,9 @@ export default function EnterItem({ onAdd }) {
           value={groceryCategory}
           onChange={handleChangeGroceryCategory}
         >
-          {category.map((category) => {
-            return <option value={category}>{category}</option>;
-          })}
+          <option value="Any">Any</option>
+          <option value="Bakery">Bakery</option>
+          <option value="Dairy">Dairy</option>
         </select>
       </section>
       <button onClick={handleClick}>
