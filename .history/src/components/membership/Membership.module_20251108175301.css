@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+  background-color: var(--color-membership-bg);
+}
+
+.contdiv1 {
+  background-color: red;
+}
+
+.contdiv2 {
+  background-color: yellow;
+}

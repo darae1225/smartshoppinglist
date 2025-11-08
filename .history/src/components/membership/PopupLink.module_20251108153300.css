@@ -1,0 +1,32 @@
+.flybuys .everydayrewards {
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem 0;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: var(--color-flybuys);
+  color: var(--color-text);
+  border-radius: 15px;
+}
+
+.flybuys:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.flybuys:active {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.everydayrewards {
+  background-color: color(--color-everydayrewards);
+}

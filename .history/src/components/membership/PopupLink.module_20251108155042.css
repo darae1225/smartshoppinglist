@@ -1,0 +1,18 @@
+.flybuys {
+  background-color: var(--color-flybuys);
+  border: 2rem solid red;
+}
+
+.everydayrewards {
+  background-color: var(--color-everydayrewards);
+}
+
+.flybuys:hover .everydayrewards:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.flybuys:active .everydayrewards:active {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}

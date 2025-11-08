@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 15px;
+  background-color: var(--color-membership-bg);
+}

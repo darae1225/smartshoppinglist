@@ -1,0 +1,9 @@
+.flybuys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: var(--color-flybuys);
+  color: var(--color-text);
+}
