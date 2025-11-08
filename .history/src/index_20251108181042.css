@@ -1,0 +1,51 @@
+:root {
+  --color-bg: #2ea666;
+  --color-text: white;
+  --color-text-black: black;
+  --color-text-category: red;
+  --color-hover: green;
+  --color-accent: #31c677;
+  --color-flybuys: coral;
+  --color-everydayrewards: green;
+  --color-header-bg: #098209;
+  --color-membership-bg: rgb(238, 238, 238);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  overflow-y: auto;
+
+  color: var(--color-text);
+  background: var(--color-bg);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 240, 72, 1) 0%,
+    rgb(15, 117, 62) 40%
+  );
+  border: 5px solid var(--color-everydayrewards);
+}
+
+button {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+}
+button:active {
+  border: solid 1px var(--color-everydayrewards);
+}

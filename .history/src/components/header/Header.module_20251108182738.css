@@ -1,0 +1,10 @@
+.header {
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}

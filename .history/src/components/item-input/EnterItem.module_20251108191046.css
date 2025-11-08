@@ -1,0 +1,31 @@
+.container {
+  background-color: var(--color-accent);
+  border-radius: 15px;
+  padding: 0.5rem 0;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.inputValue {
+  margin-left: 1rem;
+}
+
+.inputValue,
+.groceryCategory {
+  padding: 0.5rem 0.3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.button {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}

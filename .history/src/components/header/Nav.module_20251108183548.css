@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.navSection {
+  /* display: flex; */
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo {
+  margin-right: 0.3rem;
+}
+
+.logoText {
+  font-size: 2rem;
+}
+
+.button {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 0.2rem;
+}
+
+.button:hover {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.button:active {
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
