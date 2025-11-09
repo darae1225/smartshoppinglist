@@ -18,3 +18,7 @@
   background-color: var(--color-accent);
   color: var(--color-text);
 }
+
+.dealButton:active {
+  border: 5px solid yellow;
+}

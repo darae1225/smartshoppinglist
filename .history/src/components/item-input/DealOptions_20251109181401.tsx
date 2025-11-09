@@ -33,12 +33,12 @@ export default function DealOptions({ dealOption, setDealOption }) {
         style={{
           backgroundColor:
             dealOption === "Wait for deals"
-              ? "var(--color-accent)"
-              : "var(--color-text)",
-          color:
-            dealOption === "Wait for deals"
               ? "var(--color-text)"
               : "var(--color-accent)",
+          color:
+            dealOption === "Wait for deals"
+              ? "var(--color-accent)"
+              : "var(--color-text)",
         }}
       >
         <MdOutlineDiscount size={12} /> Wait for Deals

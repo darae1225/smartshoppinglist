@@ -16,5 +16,9 @@
 
 .dealButton:hover {
   background-color: var(--color-accent);
-  color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.dealButton:active {
+  border: 5px solid yellow;
 }

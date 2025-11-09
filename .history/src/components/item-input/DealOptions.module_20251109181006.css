@@ -7,14 +7,18 @@
 }
 
 .dealButton {
-  background-color: var(--color-text);
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-text);
   font-weight: bold;
   width: 100%;
   padding: 1rem 0;
 }
 
 .dealButton:hover {
-  background-color: var(--color-accent);
-  color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-accent);
+}
+
+.dealButton:active {
+  border: 5px solid yellow;
 }
