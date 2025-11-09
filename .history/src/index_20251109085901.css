@@ -32,7 +32,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   background: linear-gradient(
-    360deg,
+    180deg,
     rgba(223, 240, 72, 1) 0%,
     rgb(15, 117, 62) 40%
   );
