@@ -73,11 +73,5 @@
 }
 
 .essentials {
-  color: var(--color-text-dealOption-essentials);
-  margin-left: 0.5rem;
-}
-
-.waitfordeals {
   color: var(--color-text-dealOption-waitfordeals);
-  margin-left: 0.5rem;
 }

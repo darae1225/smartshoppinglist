@@ -7,7 +7,7 @@ export default function Items({ items, onDelete }) {
       onDelete(item);
     }
   };
-  console.log(items);
+  console.log(item);
 
   return (
     <ul className={styles.ul}>
@@ -29,18 +29,8 @@ export default function Items({ items, onDelete }) {
               />
               <span className={styles.text}>{item.text}</span>
             </div>
-            <span className={styles.category}>
-              {item.groceryCategory}
-              <span
-                className={
-                  item.dealOption === "Essentials"
-                    ? styles.essentials
-                    : styles.waitfordeals
-                }
-              >
-                - {item.dealOption}
-              </span>
-            </span>
+            <span className={styles.category}>{item.groceryCategory}</span>
+            <span style={{ color: "red", width: "50px" }}></span>
           </li>
         ))
       )}

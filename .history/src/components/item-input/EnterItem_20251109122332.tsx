@@ -42,15 +42,15 @@ export default function EnterItem({ onAdd }) {
       <section className={styles.dealSection}>
         <button
           className={styles.dealButton}
-          value="Essentials"
+          value="essentials"
           onClick={handleDealOption}
           style={{
             backgroundColor:
-              dealOption === "Essentials"
+              dealOption === "essentials"
                 ? "var(--color-text)"
                 : "var(--color-accent)",
             color:
-              dealOption === "Essentials"
+              dealOption === "essentials"
                 ? "var(--color-accent)"
                 : "var(--color-text)",
           }}
@@ -60,14 +60,14 @@ export default function EnterItem({ onAdd }) {
         <button
           className={styles.dealButton}
           onClick={handleDealOption}
-          value="Wait for deals"
+          value="wait for deals"
           style={{
             backgroundColor:
-              dealOption === "Wait for deals"
+              dealOption === "waitfordeals"
                 ? "var(--color-text)"
                 : "var(--color-accent)",
             color:
-              dealOption === "Wait for deals"
+              dealOption === "waitfordeals"
                 ? "var(--color-accent)"
                 : "var(--color-text)",
           }}

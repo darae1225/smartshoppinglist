@@ -29,17 +29,9 @@ export default function Items({ items, onDelete }) {
               />
               <span className={styles.text}>{item.text}</span>
             </div>
-            <span className={styles.category}>
-              {item.groceryCategory}
-              <span
-                className={
-                  item.dealOption === "Essentials"
-                    ? styles.essentials
-                    : styles.waitfordeals
-                }
-              >
-                - {item.dealOption}
-              </span>
+            <span className={styles.category}>{item.groceryCategory}</span>
+            <span style={{ color: "red", width: "50px" }}>
+              {item.dealOption}
             </span>
           </li>
         ))

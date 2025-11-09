@@ -34,10 +34,11 @@ export default function Items({ items, onDelete }) {
               <span
                 className={
                   item.dealOption === "Essentials"
-                    ? styles.essentials
+                    ? styles.essential
                     : styles.waitfordeals
                 }
               >
+                {" "}
                 - {item.dealOption}
               </span>
             </span>

@@ -31,15 +31,7 @@ export default function Items({ items, onDelete }) {
             </div>
             <span className={styles.category}>
               {item.groceryCategory}
-              <span
-                className={
-                  item.dealOption === "Essentials"
-                    ? styles.essentials
-                    : styles.waitfordeals
-                }
-              >
-                - {item.dealOption}
-              </span>
+              <span className={styles.dealOption}> - {item.dealOption}</span>
             </span>
           </li>
         ))

@@ -73,11 +73,9 @@
 }
 
 .essentials {
-  color: var(--color-text-dealOption-essentials);
-  margin-left: 0.5rem;
+  color: var(--color-text-dealOption-waitfordeals);
 }
 
 .waitfordeals {
   color: var(--color-text-dealOption-waitfordeals);
-  margin-left: 0.5rem;
 }
