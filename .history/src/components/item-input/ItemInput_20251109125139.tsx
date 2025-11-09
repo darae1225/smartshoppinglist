@@ -7,8 +7,12 @@ export default function ItemInput({ onAdd }) {
 
   return (
     <>
-      <DealOptions dealOption={dealOption} setDealOption={setDealOption} />
-      <EnterItem onAdd={onAdd} dealOption={dealOption} />
+      <DealOptions dealOption={dealOption} />
+      <EnterItem
+        onAdd={onAdd}
+        dealOption={dealOption}
+        setDealOption={setDealOption}
+      />
     </>
   );
 }

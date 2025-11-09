@@ -4,7 +4,7 @@ import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { category } from "../../data/category";
 
-export default function EnterItem({ onAdd, dealOption }) {
+export default function EnterItem({ onAdd, dealOption, setDealOption }) {
   const [inputValue, setInputValue] = useState("");
   const [groceryCategory, setGroceryCategory] = useState("Any");
 
