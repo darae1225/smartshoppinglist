@@ -16,7 +16,7 @@ export default function EnterItem({ onAdd }) {
 
   const handleChangeGroceryCategory = (e) => {
     const selectedCategory = e.target.value;
-    setGroceryCategory(selectedCategory);
+    setGroceryCategory(selectedCategory === "" ? "Any" : selectedCategory);
   };
 
   const handleDealOption = (e) => {

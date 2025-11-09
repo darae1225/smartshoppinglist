@@ -8,7 +8,7 @@ import { category } from "../../data/category";
 export default function EnterItem({ onAdd }) {
   const [dealOption, setDealOption] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const [groceryCategory, setGroceryCategory] = useState("Any");
+  const [groceryCategory, setGroceryCategory] = useState("");
 
   const handleChangeInputValue = (e) => {
     setInputValue(e.target.value);
@@ -16,7 +16,7 @@ export default function EnterItem({ onAdd }) {
 
   const handleChangeGroceryCategory = (e) => {
     const selectedCategory = e.target.value;
-    setGroceryCategory(selectedCategory);
+    setGroceryCategory(selectedCategory === "" ? "Any" : selectedCategory);
   };
 
   const handleDealOption = (e) => {
@@ -34,7 +34,7 @@ export default function EnterItem({ onAdd }) {
       dealOption,
     });
     setInputValue("");
-    setGroceryCategory("Any");
+    setGroceryCategory("");
   };
 
   return (

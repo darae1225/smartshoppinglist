@@ -3,25 +3,40 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { MdOutlineDiscount } from "react-icons/md";
-import { category } from "../../data/category";
 
 export default function EnterItem({ onAdd }) {
   const [dealOption, setDealOption] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [groceryCategory, setGroceryCategory] = useState("Any");
+  const [groceryCategory, setGroceryCategory] = useState("");
+  const category = [
+    "Any",
+    "Dairy",
+    "Bakery",
+    "Meat",
+    "Seafood",
+    "Asian",
+    "Drinks",
+  ];
 
   const handleChangeInputValue = (e) => {
     setInputValue(e.target.value);
   };
 
   const handleChangeGroceryCategory = (e) => {
-    const selectedCategory = e.target.value;
-    setGroceryCategory(selectedCategory);
+    setGroceryCategory(e.target.value);
   };
 
   const handleDealOption = (e) => {
     const selected = e.target.value;
-    setDealOption((prev) => (prev === selected ? "" : selected));
+
+    if (dealOption === selected) {
+      setDealOption(selected);
+      setIsClicked(true);
+    } else {
+      setIsClicked(false);
+      setDealOption("");
+    }
   };
 
   const handleClick = () => {
@@ -30,11 +45,12 @@ export default function EnterItem({ onAdd }) {
       id: uuidv4(),
       text: inputValue,
       status: "active",
-      groceryCategory,
-      dealOption,
+      groceryCategory: groceryCategory,
+      dealOption: { dealOption },
     });
     setInputValue("");
-    setGroceryCategory("Any");
+    setGroceryCategory("");
+    setIsClicked(false);
   };
 
   return (

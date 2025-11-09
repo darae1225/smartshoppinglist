@@ -3,20 +3,20 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { MdOutlineDiscount } from "react-icons/md";
-import { category } from "../../data/category";
+import { category } from "../../data/categories";
 
 export default function EnterItem({ onAdd }) {
   const [dealOption, setDealOption] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const [groceryCategory, setGroceryCategory] = useState("Any");
+  const [groceryCategory, setGroceryCategory] = useState("");
 
   const handleChangeInputValue = (e) => {
     setInputValue(e.target.value);
   };
 
   const handleChangeGroceryCategory = (e) => {
-    const selectedCategory = e.target.value;
-    setGroceryCategory(selectedCategory);
+    const groceryCategory = e.target.value;
+    setGroceryCategory(groceryCategory === "" ? "Any" : groceryCategory);
   };
 
   const handleDealOption = (e) => {
@@ -34,7 +34,7 @@ export default function EnterItem({ onAdd }) {
       dealOption,
     });
     setInputValue("");
-    setGroceryCategory("Any");
+    setGroceryCategory("");
   };
 
   return (

@@ -3,25 +3,39 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { MdOutlineDiscount } from "react-icons/md";
-import { category } from "../../data/category";
 
 export default function EnterItem({ onAdd }) {
   const [dealOption, setDealOption] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
+  const [dealOptionValue, setDealOptionValue] = useState("");
   const [inputValue, setInputValue] = useState("");
-  const [groceryCategory, setGroceryCategory] = useState("Any");
+  const [groceryCategory, setGroceryCategory] = useState("");
+  const category = [
+    "Any",
+    "Dairy",
+    "Bakery",
+    "Meat",
+    "Seafood",
+    "Asian",
+    "Drinks",
+  ];
+
+  const handleDealOption = (e) => {
+    if (e.target.value === "essentials") {
+      setDealOption("essentials");
+      setIsClicked(!isClicked);
+    } else if (e.target.value === "waitfordeals") {
+      setDealOption("waitfordeals");
+      setIsClicked(!isClicked);
+    }
+  };
 
   const handleChangeInputValue = (e) => {
     setInputValue(e.target.value);
   };
 
   const handleChangeGroceryCategory = (e) => {
-    const selectedCategory = e.target.value;
-    setGroceryCategory(selectedCategory);
-  };
-
-  const handleDealOption = (e) => {
-    const selected = e.target.value;
-    setDealOption((prev) => (prev === selected ? "" : selected));
+    setGroceryCategory(e.target.value);
   };
 
   const handleClick = () => {
@@ -30,11 +44,12 @@ export default function EnterItem({ onAdd }) {
       id: uuidv4(),
       text: inputValue,
       status: "active",
-      groceryCategory,
-      dealOption,
+      groceryCategory: groceryCategory,
+      dealOption: { dealOption },
     });
     setInputValue("");
-    setGroceryCategory("Any");
+    setGroceryCategory("");
+    setIsClicked(false);
   };
 
   return (
@@ -45,12 +60,11 @@ export default function EnterItem({ onAdd }) {
           value="essentials"
           onClick={handleDealOption}
           style={{
-            backgroundColor:
-              dealOption === "essentials"
-                ? "var(--color-text)"
-                : "var(--color-accent)",
+            backgroundColor: isClicked
+              ? "var(--color-text)"
+              : "var(--color-accent)",
             color:
-              dealOption === "essentials"
+              isClicked && value === "essential"
                 ? "var(--color-accent)"
                 : "var(--color-text)",
           }}
@@ -62,14 +76,10 @@ export default function EnterItem({ onAdd }) {
           onClick={handleDealOption}
           value="waitfordeals"
           style={{
-            backgroundColor:
-              dealOption === "waitfordeals"
-                ? "var(--color-text)"
-                : "var(--color-accent)",
-            color:
-              dealOption === "waitfordeals"
-                ? "var(--color-accent)"
-                : "var(--color-text)",
+            backgroundColor: isClicked
+              ? "var(--color-text)"
+              : "var(--color-accent)",
+            color: isClicked ? "var(--color-accent)" : "var(--color-text)",
           }}
         >
           <MdOutlineDiscount size={12} /> Wait for Deals
