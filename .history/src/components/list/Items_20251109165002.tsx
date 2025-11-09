@@ -7,15 +7,9 @@ export default function Items({ items, onDelete, filteredCategory }) {
       onDelete(item);
     }
   };
-
-  const filtered =
-    filteredCategory && filteredCategory !== "All"
-      ? items.filter((item) => item.groceryCategory === filteredCategory)
-      : items;
-
   return (
     <ul className={styles.ul}>
-      {filtered.length === 0 ? (
+      {items.length === 0 ? (
         <div className={styles.empty}>
           <p className={styles.emptyText}>There's nothing in this list!</p>
           <span className={styles.saving}>
@@ -23,7 +17,7 @@ export default function Items({ items, onDelete, filteredCategory }) {
           </span>
         </div>
       ) : (
-        filtered.map((item) => (
+        items.map((item) => (
           <li key={item.id} className={styles.item}>
             <div className={styles.itemTop}>
               <input

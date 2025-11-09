@@ -8,15 +8,10 @@ export default function List({ items, onDelete }) {
   const onFilter = (selectedCategory) => {
     setFilteredCategory(selectedCategory);
   };
-
   return (
     <div>
-      <Filter onFilter={onFilter} />
-      <Items
-        items={items}
-        onDelete={onDelete}
-        filteredCategory={filteredCategory}
-      />
+      <Filter items={items} onFilter={onFilter} />
+      <Items items={items} onDelete={onDelete} />
     </div>
   );
 }

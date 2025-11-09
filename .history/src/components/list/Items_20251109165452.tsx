@@ -8,11 +8,9 @@ export default function Items({ items, onDelete, filteredCategory }) {
     }
   };
 
-  const filtered =
-    filteredCategory && filteredCategory !== "All"
-      ? items.filter((item) => item.groceryCategory === filteredCategory)
-      : items;
-
+  const filtered = filteredCategory
+    ? items.filter((item) => item.groceryCategory === filteredCategory)
+    : items;
   return (
     <ul className={styles.ul}>
       {filtered.length === 0 ? (

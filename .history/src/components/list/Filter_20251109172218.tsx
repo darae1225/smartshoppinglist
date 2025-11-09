@@ -9,7 +9,7 @@ export default function Filter({ onFilter }) {
     const selectedCategory = e.target.value;
     setFilter(selectedCategory);
     console.log(selectedCategory);
-    onFilter(selectedCategory);
+    onFilter(filter);
   };
 
   return (

@@ -1,0 +1,19 @@
+import styles from "./Filter.module.css";
+import { category } from "../../data/category";
+import { useState } from "react";
+
+export default function Filter() {
+  const [filter, setFilter] = useState("Any");
+
+  return (
+    <section className={styles.container}>
+      {category.map((cat) => {
+        return (
+          <button id={cat} className={styles.button}>
+            {cat}
+          </button>
+        );
+      })}
+    </section>
+  );
+}

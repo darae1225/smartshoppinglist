@@ -11,7 +11,7 @@ export default function List({ items, onDelete }) {
 
   return (
     <div>
-      <Filter onFilter={onFilter} />
+      <Filter items={items} onFilter={onFilter} />
       <Items
         items={items}
         onDelete={onDelete}

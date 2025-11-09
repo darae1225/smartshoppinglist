@@ -11,12 +11,8 @@ export default function List({ items, onDelete }) {
 
   return (
     <div>
-      <Filter onFilter={onFilter} />
-      <Items
-        items={items}
-        onDelete={onDelete}
-        filteredCategory={filteredCategory}
-      />
+      <Filter items={items} onFilter={onFilter} />
+      <Items items={items} onDelete={onDelete} />
     </div>
   );
 }
