@@ -5,5 +5,6 @@ export const category: string[] = [
   "Dairy",
   "Meat",
   "Seafood",
+  "Asian",
   "Drinks",
 ];

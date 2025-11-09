@@ -7,13 +7,12 @@ export default function Membership() {
     <section className={styles.container}>
       <div>
         <PopupLink membership="flybuys">
-          <IoMdCard size={24} className={styles.membershipIcon} /> Flybuys
+          <IoMdCard size={24} /> Flybuys
         </PopupLink>
       </div>
       <div>
         <PopupLink membership="everydayrewards">
-          <IoMdCard size={24} className={styles.membershipIcon} /> Everyday
-          Rewards
+          <IoMdCard size={24} /> Everyday Rewards
         </PopupLink>
       </div>
     </section>

@@ -24,7 +24,7 @@
   background-color: var(--color-text);
   color: var(--color-accent);
   width: 2.5rem;
-  height: auto;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;

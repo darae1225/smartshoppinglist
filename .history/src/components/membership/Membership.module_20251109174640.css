@@ -7,6 +7,6 @@
   background-color: var(--color-membership-bg);
 }
 
-.membershipIcon {
-  margin-right: 0.3rem;
+.membershipContainer {
+  background-color: red;
 }
