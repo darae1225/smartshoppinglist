@@ -18,6 +18,6 @@
 
 <h2>🔗Live Demo</h2>
   <p>
-   <a href="www.smartshoppinglist.vercel.app">smartshoppinglist.vercel.app</a>
+   <a href="https://smartshoppinglist.vercel.app target="_blank"" >smartshoppinglist.vercel.app</a>
   </p>
 
