@@ -1,17 +1,16 @@
 import styles from "./Filter.module.css";
 import { category } from "../../data/category";
 import { useState } from "react";
-import type { Item } from "../../type/item";
 
 type FilterProps = {
-  onFilter: (selectedCategory: string) => void;
+  onFilter: string;
 };
 
 export default function Filter({ onFilter }: FilterProps) {
-  const [filter, setFilter] = useState<string>("Any");
+  const [filter, setFilter] = useState("Any");
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const selectedCategory = e.currentTarget.value;
+  const handleClick = (e) => {
+    const selectedCategory = e.target.value;
     setFilter(selectedCategory);
     console.log(selectedCategory);
     onFilter(selectedCategory);

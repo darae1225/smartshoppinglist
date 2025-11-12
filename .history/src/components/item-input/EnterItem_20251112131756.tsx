@@ -3,7 +3,7 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { category } from "../../data/category";
-import type { DealOption, Item } from "../../type/item";
+import { Item, DealOption } from "../../type/item.ts";
 
 type EnterItemProps = {
   onAdd: (item: Item) => void;

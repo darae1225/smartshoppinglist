@@ -1,5 +1,5 @@
 import styles from "./PopupLink.module.css";
-import type { ReactNode, MouseEvent } from "react";
+import { ReactNode, MouseEvent } from "React";
 
 type PopupLinkProps = {
   children: ReactNode;

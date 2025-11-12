@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Item } from "../../type/item";
 
 type FilterProps = {
-  onFilter: (selectedCategory: string) => void;
+  onFilter: (item: Item) => void;
 };
 
 export default function Filter({ onFilter }: FilterProps) {

@@ -1,5 +1,3 @@
-import type { Dispatch, SetStateAction } from "react";
-
 export type Item = {
   id: string;
   text: string;
@@ -9,5 +7,3 @@ export type Item = {
 };
 
 export type DealOption = "Essentials" | "Wait for deals" | "";
-
-export type SetDealOption = Dispatch<SetStateAction<DealOption>>;

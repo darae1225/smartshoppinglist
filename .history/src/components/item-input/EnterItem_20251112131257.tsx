@@ -3,24 +3,22 @@ import { FaPlus } from "react-icons/fa";
 import styles from "./EnterItem.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { category } from "../../data/category";
-import type { DealOption, Item } from "../../type/item";
+import { Item, dealOptions } from "../../type/item";
 
 type EnterItemProps = {
   onAdd: (item: Item) => void;
-  dealOption: DealOption;
+  dealOption: dealOptions;
 };
 
 export default function EnterItem({ onAdd, dealOption }: EnterItemProps) {
-  const [inputValue, setInputValue] = useState<string>("");
-  const [groceryCategory, setGroceryCategory] = useState<string>("Any");
+  const [inputValue, setInputValue] = useState("");
+  const [groceryCategory, setGroceryCategory] = useState("Any");
 
-  const handleChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChangeInputValue = (e) => {
     setInputValue(e.target.value);
   };
 
-  const handleChangeGroceryCategory = (
-    e: React.ChangeEvent<HTMLSelectElement>
-  ) => {
+  const handleChangeGroceryCategory = (e) => {
     const selectedCategory = e.target.value;
     setGroceryCategory(selectedCategory);
   };

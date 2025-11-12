@@ -1,12 +1,12 @@
 import styles from "./PopupLink.module.css";
-import type { ReactNode, MouseEvent } from "react";
+import { ReactNode, MouseEvent } from "React";
 
 type PopupLinkProps = {
   children: ReactNode;
   membership: "flybuys" | "everydayrewards";
 };
-export default function PopupLink({ children, membership }: PopupLinkProps) {
-  const openPopup = (e: MouseEvent<HTMLAnchorElement>) => {
+export default function PopupLink({ children, membership }) {
+  const openPopup = (e) => {
     e.preventDefault();
     // Fixes dual-screen position  ↓ current monitor
     const dualScreenLeft = window.screenLeft ?? window.screenX;

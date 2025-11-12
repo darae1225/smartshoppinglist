@@ -1,5 +1,4 @@
 import type { Dispatch, SetStateAction } from "react";
-
 export type Item = {
   id: string;
   text: string;

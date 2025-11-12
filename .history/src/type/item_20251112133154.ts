@@ -1,4 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
+import type { ChangeEvent } from "react";
 
 export type Item = {
   id: string;
@@ -11,3 +12,5 @@ export type Item = {
 export type DealOption = "Essentials" | "Wait for deals" | "";
 
 export type SetDealOption = Dispatch<SetStateAction<DealOption>>;
+
+export type ChangeEvent = ChangeEvent<HTMLElement>;

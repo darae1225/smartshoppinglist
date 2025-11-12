@@ -1,19 +1,15 @@
 import styles from "./Items.module.css";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
-import type { Item } from "../../type/item";
-import type { ChangeEvent } from "react";
+import type {Item} from "../../type/item"
 
 type ItemsProps = {
   items: Item[];
-  onDelete: (item: Item) => void;
-  filteredCategory: string;
-};
-export default function Items({
-  items,
-  onDelete,
-  filteredCategory,
-}: ItemsProps) {
-  const handleChange = (e: ChangeEvent<HTMLInputElement>, item: Item) => {
+  onDelete: Item;
+  filteredCategory: 
+
+}
+export default function Items({ items, onDelete, filteredCategory }: ItemsProps) {
+  const handleChange = (e, item) => {
     if (e.target.checked) {
       onDelete(item);
     }

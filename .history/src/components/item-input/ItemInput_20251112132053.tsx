@@ -1,18 +1,15 @@
+import { useState } from "react";
 import DealOptions from "./DealOptions";
 import EnterItem from "./EnterItem";
-import type { DealOption, Item, SetDealOption } from "../../type/item";
+import type { DealOption, Item } from "../../type/item";
 
 type ItemInputProps = {
   onAdd: (item: Item) => void;
   dealOption: DealOption;
-  setDealOption: SetDealOption;
-};
+  setDealOption: 
+}
 
-export default function ItemInput({
-  onAdd,
-  dealOption,
-  setDealOption,
-}: ItemInputProps) {
+export default function ItemInput({ onAdd, dealOption, setDealOption }: ItemInputProps) {
   return (
     <>
       <DealOptions dealOption={dealOption} setDealOption={setDealOption} />

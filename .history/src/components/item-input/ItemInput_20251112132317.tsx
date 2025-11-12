@@ -1,11 +1,11 @@
 import DealOptions from "./DealOptions";
 import EnterItem from "./EnterItem";
-import type { DealOption, Item, SetDealOption } from "../../type/item";
+import type { DealOption, Item, SsetDealOption } from "../../type/item";
 
 type ItemInputProps = {
   onAdd: (item: Item) => void;
   dealOption: DealOption;
-  setDealOption: SetDealOption;
+  setDealOption: Dispatch<SetStateAction<DealOption>>;
 };
 
 export default function ItemInput({

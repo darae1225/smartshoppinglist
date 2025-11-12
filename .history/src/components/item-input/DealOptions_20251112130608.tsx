@@ -13,7 +13,7 @@ export default function DealOptions({
   setDealOption,
 }: DealOptionsProps) {
   const handleDealOption = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const selected = e.currentTarget.value as "Essentials" | "Wait for deals";
+    const selected = e.target.value as "Essentials" | "Wait for deals";
     setDealOption((prev) => (prev === selected ? "" : selected));
   };
 

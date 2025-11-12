@@ -1,11 +1,10 @@
 import styles from "./Items.module.css";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import type { Item } from "../../type/item";
-import type { ChangeEvent } from "react";
 
 type ItemsProps = {
   items: Item[];
-  onDelete: (item: Item) => void;
+  onDelete: Item;
   filteredCategory: string;
 };
 export default function Items({

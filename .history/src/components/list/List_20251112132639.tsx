@@ -8,10 +8,10 @@ type ListProps = {
   onDelete: (item: Item) => void;
 };
 
-export default function List({ items, onDelete }: ListProps) {
+export default function List({ items, onDelete }) {
   const [filteredCategory, setFilteredCategory] = useState("");
 
-  const onFilter = (selectedCategory: string) => {
+  const onFilter = (selectedCategory) => {
     setFilteredCategory(selectedCategory);
   };
 

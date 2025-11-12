@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import type { Dispatch, SetStateAction } from "react";
+import TYPE { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 export default function useLocalStorage<T>(
   key: string,

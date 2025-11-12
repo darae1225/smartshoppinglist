@@ -1,7 +1,7 @@
 import styles from "./Items.module.css";
+import { ChangeEvent } from "react";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import type { Item } from "../../type/item";
-import type { ChangeEvent } from "react";
 
 type ItemsProps = {
   items: Item[];
