@@ -8,7 +8,7 @@ import type { Item, DealOption } from "../type/item";
 
 export default function Main() {
   const [items, setItems] = useLocalStorage<Item[]>("items", []);
-  const [dealOption, setDealOption] = useState<DealOption>("Essentials");
+  const [dealOption, setDealOption] = useState("Essentials");
 
   const handleAdd = (newItem: Item) => {
     setItems((prev) => [...prev, newItem]);

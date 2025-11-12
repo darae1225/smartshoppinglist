@@ -23,9 +23,7 @@ export default function Filter({ onFilter }: FilterProps) {
           <button
             id={cat}
             value={cat}
-            className={`${styles.button} ${
-              filter === cat ? styles.active : ""
-            }`}
+            className={styles.button}
             onClick={handleClick}
           >
             {cat}
