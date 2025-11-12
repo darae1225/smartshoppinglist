@@ -7,7 +7,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 export default function Main() {
   const [items, setItems] = useLocalStorage("items", []);
-  const [dealOption, setDealOption] = useState("Essentials");
+  const [dealOption, setDealOption] = useState("");
 
   const handleAdd = (newItem) => {
     setItems((prev) => [...prev, newItem]);

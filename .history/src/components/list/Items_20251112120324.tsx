@@ -12,14 +12,11 @@ export default function Items({ items, onDelete, filteredCategory }) {
     filteredCategory && filteredCategory !== "All"
       ? items.filter((item) => item.groceryCategory === filteredCategory)
       : items;
-  const essentials = filtered.filter(
-    (item) => item.dealOption === "Essentials"
-  );
-  const waitForDeals = filtered.filter(
-    (item) => item.dealOption !== "Essentials"
-  );
+  const essentials = filtered.filter((item)=>item.dealOption === "Essentials");
+  const waitForDeals = filtered.filter((item)=> item.dealOption!== "Essentials");
 
   const sortedItems = [...essentials, ...waitForDeals];
+
 
   return (
     <ul className={styles.ul}>
