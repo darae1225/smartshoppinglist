@@ -42,8 +42,8 @@
 
 .sharedText {
   position: absolute;
-  top: 3rem;
-  right: 4.5rem;
+  top: 3rem; /* adjust based on nav height */
+  right: 4.5rem; /* align with share button */
   background-color: #e6ffe6;
   color: green;
   font-size: 0.8rem;
@@ -54,22 +54,4 @@
   animation: fadeInOut 2s forwards;
   pointer-events: none;
   z-index: 10;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
 }

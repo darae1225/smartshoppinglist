@@ -23,7 +23,7 @@ export default function Nav() {
       }
     } else {
       navigator.clipboard.writeText(shareData.url);
-      alert("The SmartList Link copied to clipboard!");
+      alert("Link copied to clipboard!");
     }
   };
 
@@ -35,17 +35,15 @@ export default function Nav() {
           <p className={styles.logoText}>SmartList</p>
         </section>
         <section className={styles.navSection}>
-          <button className={styles.button} onClick={handleShare}>
+          <button className={styles.button}>
             <SlShare size={24} />
           </button>
-          {shared && (
-            <span className={styles.sharedText}>Thanks for sharing!</span>
-          )}
           <button className={styles.button}>
             <CgProfile size={24} />
           </button>
         </section>
       </section>
+      {shared && <span className={styles.sharedText}>Thanks for sharing!</span>}
     </nav>
   );
 }
