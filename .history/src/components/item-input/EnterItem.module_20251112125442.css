@@ -9,11 +9,7 @@
 
 .inputValue {
   margin-left: 1rem;
-  max-width: 10rem;
-}
-
-.groceryCategory {
-  max-width: 5rem;
+  max-width: 15rem;
 }
 
 .inputValue,

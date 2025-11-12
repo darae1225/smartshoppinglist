@@ -9,11 +9,6 @@
 
 .inputValue {
   margin-left: 1rem;
-  max-width: 10rem;
-}
-
-.groceryCategory {
-  max-width: 5rem;
 }
 
 .inputValue,
@@ -28,7 +23,7 @@
 .button {
   background-color: var(--color-text);
   color: var(--color-accent);
-  width: 2.5rem;
+  width: 2rem;
   height: auto;
   display: flex;
   align-items: center;

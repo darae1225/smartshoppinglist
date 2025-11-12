@@ -12,10 +12,6 @@
   max-width: 10rem;
 }
 
-.groceryCategory {
-  max-width: 5rem;
-}
-
 .inputValue,
 .groceryCategory {
   padding: 0.5rem 0.3rem;
