@@ -1,12 +1,7 @@
 import styles from "./Items.module.css";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 
-export default function Items({
-  items,
-  onDelete,
-  filteredCategory,
-  dealOption,
-}) {
+export default function Items({ items, onDelete, filteredCategory }) {
   const handleChange = (e, item) => {
     if (e.target.checked) {
       onDelete(item);

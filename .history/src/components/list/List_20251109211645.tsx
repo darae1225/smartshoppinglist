@@ -2,7 +2,7 @@ import { useState } from "react";
 import Filter from "./Filter";
 import Items from "./Items";
 
-export default function List({ items, onDelete, dealOption, setDeleteOption }) {
+export default function List({ items, onDelete }) {
   const [filteredCategory, setFilteredCategory] = useState("");
 
   const onFilter = (selectedCategory) => {
@@ -16,7 +16,6 @@ export default function List({ items, onDelete, dealOption, setDeleteOption }) {
         items={items}
         onDelete={onDelete}
         filteredCategory={filteredCategory}
-        dealOption={dealOption}
       />
     </div>
   );

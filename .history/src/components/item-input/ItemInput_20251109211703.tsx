@@ -2,7 +2,7 @@ import { useState } from "react";
 import DealOptions from "./DealOptions";
 import EnterItem from "./EnterItem";
 
-export default function ItemInput({ onAdd, dealOption, setDealOption }) {
+export default function ItemInput({ onAdd, dealOption }) {
   return (
     <>
       <DealOptions dealOption={dealOption} setDealOption={setDealOption} />

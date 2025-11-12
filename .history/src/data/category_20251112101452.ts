@@ -1,11 +1,11 @@
 export const category: string[] = [
   "All",
   "Asian",
-  "Veg&Fruits",
+  "Vegetable",
+  "Fruites",
   "Bakery",
   "Dairy",
   "Meat",
   "Seafood",
   "Drinks",
-  "Etc",
 ];

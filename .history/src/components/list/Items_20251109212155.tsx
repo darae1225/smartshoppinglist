@@ -47,7 +47,7 @@ export default function Items({
                     : styles.waitfordeals
                 }
               >
-                - {item.dealOption}
+                - {item.dealOption} {dealOption}
               </span>
             </span>
           </li>

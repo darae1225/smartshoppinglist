@@ -3,11 +3,10 @@ import Header from "../components/header/Header";
 import ItemInput from "../components/item-input/ItemInput";
 import Membership from "../components/membership/Membership";
 import List from "../components/list/List";
-import useLocalStorage from "../hooks/useLocalStorage";
 
 export default function Main() {
-  const [items, setItems] = useLocalStorage("items", []);
-  const [dealOption, setDealOption] = useState("");
+  const [items, setItems] = useState([]);
+  const [dealOption, setDealOption] = useState("Essentials");
 
   const handleAdd = (newItem) => {
     setItems((prev) => [...prev, newItem]);

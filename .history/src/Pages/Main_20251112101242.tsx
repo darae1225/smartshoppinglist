@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/header/Header";
 import ItemInput from "../components/item-input/ItemInput";
 import Membership from "../components/membership/Membership";
 import List from "../components/list/List";
-import useLocalStorage from "../hooks/useLocalStorage";
+import useLocalStorage from "../hooks/localStorage";
 
 export default function Main() {
   const [items, setItems] = useLocalStorage("items", []);

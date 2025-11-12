@@ -2,7 +2,7 @@ import { useState } from "react";
 import Filter from "./Filter";
 import Items from "./Items";
 
-export default function List({ items, onDelete, dealOption, setDeleteOption }) {
+export default function List({ items, onDelete, dealOption }) {
   const [filteredCategory, setFilteredCategory] = useState("");
 
   const onFilter = (selectedCategory) => {
