@@ -20,4 +20,6 @@
   <p>
    <a href="https://smartshoppinglist.vercel.app" target="_blank" >smartshoppinglist.vercel.app</a>
   </p>
-
+  
+<h2>Feedback</h2>
+<p> We value your feedback. Please contact us at darae01225@gmail.com</p>
